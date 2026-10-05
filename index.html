@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessible Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="gallery.js"></script>
+</head>
+
+<body onload="initializeGallery()">
+
+  <header>
+    <h1>Accessible Photo Gallery</h1>
+  </header>
+
+  <main>
+    <div id="image">
+      Hover over an image below to display here.
+    </div>
+
+    <div class="gallery">
+      <img class="preview" 
+           src="https://picsum.photos/id/10/600/400" 
+           alt="Forest trail with tall green trees" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()" 
+           onfocus="upDate(this)" 
+           onblur="unDo()">
+
+      <img class="preview" 
+           src="https://picsum.photos/id/11/600/400" 
+           alt="Misty mountain landscape" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()" 
+           onfocus="upDate(this)" 
+           onblur="unDo()">
+
+      <img class="preview" 
+           src="https://picsum.photos/id/12/600/400" 
+           alt="Beach shore with waves hitting the sand" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()" 
+           onfocus="upDate(this)" 
+           onblur="unDo()">
+
+      <img class="preview" 
+           src="https://picsum.photos/id/13/600/400" 
+           alt="Calm lake reflecting mountain scenery" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()" 
+           onfocus="upDate(this)" 
+           onblur="unDo()">
+
+      <img class="preview" 
+           src="https://picsum.photos/id/14/600/400" 
+           alt="Wooden dock leading into clear water" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()" 
+           onfocus="upDate(this)" 
+           onblur="unDo()">
+
+      <img class="preview" 
+           src="https://picsum.photos/id/15/600/400" 
+           alt="Waterfall flowing through rocks" 
+           onmouseover="upDate(this)" 
+           onmouseleave="unDo()" 
+           onfocus="upDate(this)" 
+           onblur="unDo()">
+    </div>
+  </main>
+
+</body>
+</html>
